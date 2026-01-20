@@ -2,9 +2,10 @@ const container =  document.querySelector('.container')
 let gridItem = document.createElement('div');
 
 let gridItems = 16;
-let gridSquare = gridItems * gridItems;
+let gridSquareDefault = gridItems * gridItems;
 
-function createGrid() {
+
+function createGrid(gridSquare) {
     for(let i = 0; i < gridSquare; i++ ) {
 
         let gridItem = document.createElement('div');
@@ -23,12 +24,25 @@ function createGrid() {
 
 }
 
-createGrid()
+createGrid(gridSquareDefault)
 
-// let btn =  document.querySelector('button');
+let btn =  document.querySelector('.btn');
 
-// btn.addEventListener('click' () => {
 
-// })
+btn.addEventListener('click', () => {
+    
+    let num = Number(prompt('Number of squares per sides'));
+    
+
+    console.log(num);
+    
+
+ 
+    
+
+
+   
+
+})
 
 
