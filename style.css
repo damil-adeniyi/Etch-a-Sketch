@@ -13,11 +13,20 @@ body {
     height: 100vh;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .container{
     width: 600px;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
@@ -28,5 +37,17 @@ body {
     border: 1px solid black;
     width: calc(600px / 16);
     height: calc(600px / 16);
-    /* padding: 10px; */
+    padding: 10px;
+}
+
+.grid-item:hover {
+    background-color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px;
 }
