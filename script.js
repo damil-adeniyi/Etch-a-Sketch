@@ -11,10 +11,13 @@ function createGrid() {
 
         gridItem.classList.add('grid-item')
 
+         gridItem.addEventListener('mouseenter', () => {
+            gridItem.style.backgroundColor = 'black';
+        })
+
         // gridItem.innerText = i + 1;
         
         container.appendChild(gridItem);
-
 
     }
 
@@ -22,10 +25,10 @@ function createGrid() {
 
 createGrid()
 
-let btn =  document.querySelector('button');
+// let btn =  document.querySelector('button');
 
-btn.addEventListener('click' () => {
-    
-})
+// btn.addEventListener('click' () => {
+
+// })
 
 

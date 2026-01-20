@@ -40,9 +40,9 @@ body {
     padding: 10px;
 }
 
-.grid-item:hover {
+/* .grid-item:hover {
     background-color: black;
-}
+} */
 
 button {
     padding: 10px 20px;
