@@ -12,11 +12,17 @@ function createGrid(gridSquare) {
 
         gridItem.classList.add('grid-item')
 
+        // width =  gridItem.style.width;
+        // height = gridItem.style.height;
+
+        // width = '16';
+        // height = '16';
+
          gridItem.addEventListener('mouseenter', () => {
             gridItem.style.backgroundColor = 'black';
         })
 
-        // gridItem.innerText = i + 1;
+        gridItem.innerText = i + 1;
         
         container.appendChild(gridItem);
 
@@ -32,17 +38,15 @@ let btn =  document.querySelector('.btn');
 btn.addEventListener('click', () => {
     
     let num = Number(prompt('Number of squares per sides'));
+    container.innerHTML = '';
+
+    if (num <= 100) {
+        let numSquare = num * num;
+        createGrid(numSquare);
+    } else {
+        alert('Put in a a value within 1 to 100')
+    }
     
-
-    console.log(num);
-    
-
- 
-    
-
-
-   
-
 })
 
 
