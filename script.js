@@ -1,4 +1,6 @@
-const container =  document.querySelector('.container')
+
+// Variables
+const container = document.querySelector('.container')
 let gridItem = document.createElement('div');
 let gridInfo = document.querySelector('.grid-info');
 
@@ -17,7 +19,18 @@ function createGrid(gridSquare, width, height) {
         gridItem.style.height = `calc(960px / ${height})`;
 
          gridItem.addEventListener('mouseenter', () => {
-            gridItem.style.backgroundColor = 'black';
+
+            // randomise color
+            let color = ['red', 'green', 'blue'];
+            let randomize = Math.floor(Math.random() * color.length )
+            gridItem.style.backgroundColor = color[randomize];
+
+            // Opacity
+            let opacity = Number(gridItem.style.opacity);
+            if(opacity < 1) {
+                opacity += 0.1;
+                gridItem.style.opacity = opacity;
+            }
         })
 
         // gridItem.innerText = i + 1;
@@ -38,7 +51,6 @@ btn.addEventListener('click', () => {
     
     let num = Number(prompt('Number of squares per sides'));
     container.innerHTML = '';
-   
 
     if (num <= 100) {
         let numSquare = num * num;

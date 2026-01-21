@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
 
 .main-container {
@@ -31,8 +30,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
-    /* padding: 20px; */
 }
 
 .grid-item {
