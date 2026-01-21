@@ -23,8 +23,8 @@ body {
 }
 
 .container{
-    width: 600px;
-    height: 600px;
+    width: 960px;
+    height: 960px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -36,8 +36,8 @@ body {
 
 .grid-item {
     border: 1px solid black;
-    width: calc(600px / 16);
-    height: calc(600px / 16);
+    width: calc(960px / 16);
+    height: calc(960px / 16);
     padding: 10px;
 }
 
