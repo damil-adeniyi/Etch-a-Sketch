@@ -1,7 +1,9 @@
 const container =  document.querySelector('.container')
 let gridItem = document.createElement('div');
+let gridInfo = document.querySelector('.grid-info');
 
 let gridItems = 16;
+gridInfo.innerText = `Grid Size: ${gridItems} x ${gridItems}`;
 let gridSquareDefault = gridItems * gridItems;
 
 // Create Grid Function
@@ -36,10 +38,12 @@ btn.addEventListener('click', () => {
     
     let num = Number(prompt('Number of squares per sides'));
     container.innerHTML = '';
+   
 
     if (num <= 100) {
         let numSquare = num * num;
         createGrid(numSquare, num, num);
+        gridInfo.innerText = `Grid Size: ${num} x ${num}`;
     } else {
         alert('Put in a a value within 1 to 100')
     }
@@ -50,6 +54,7 @@ btn.addEventListener('click', () => {
 // Reset Btn
 rstBtn.addEventListener('click', () => {
 
+    gridInfo.innerText = `Grid Size: ${gridItems} x ${gridItems}`;
     container.innerHTML = '';
     createGrid(gridSquareDefault, gridItems, gridItems);
 })

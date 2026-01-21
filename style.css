@@ -14,6 +14,7 @@ body {
 }
 
 .main-container {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,14 +37,18 @@ body {
 
 .grid-item {
     border: 1px solid black;
+    border-radius: 10px;
     width: calc(960px / 16);
     height: calc(960px / 16);
     padding: 10px;
+
 }
 
-/* .grid-item:hover {
-    background-color: black;
-} */
+.grid-info {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
 
 button {
     padding: 10px 20px;
