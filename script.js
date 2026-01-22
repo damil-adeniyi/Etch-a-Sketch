@@ -15,8 +15,8 @@ function createGrid(gridSquare, width, height) {
         let gridItem = document.createElement('div');
         gridItem.classList.add('grid-item')
         
-        gridItem.style.width = `calc(960px / ${width})`;
-        gridItem.style.height = `calc(960px / ${height})`;
+        gridItem.style.width = `calc(80vw / ${width})`;
+        gridItem.style.height = `calc(80vh / ${height})`;
 
          gridItem.addEventListener('mouseenter', () => {
 

@@ -32,11 +32,11 @@ h1 {
 }
 
 .container{
-    width: 960px;
-    height: 960px;
+    width: 80vw;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -44,8 +44,8 @@ h1 {
 .grid-item {
     border: 1px solid black;
     border-radius: 10px;
-    width: calc(960px / 16);
-    height: calc(960px / 16);
+    width: calc(80vw / 16);
+    height: calc(80vh / 16);
     padding: 10px;
 
 }
