@@ -13,6 +13,14 @@ body {
     background-color: antiquewhite;
 }
 
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .main-container {
     width: 80%;
     display: flex;
